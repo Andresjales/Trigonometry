@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &370583501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -155,6 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!64 &370583502
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -252,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &475414354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!64 &475414355
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -455,7 +459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &822963019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!64 &822963020
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -648,7 +654,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1198627575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!64 &1198627576
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -849,6 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!1 &1645639628
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,7 +878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1645639629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56af72541ebcc8c4c80b527c5c0f2af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: 0
+  orbit: 0
 --- !u!64 &1645639630
 MeshCollider:
   m_ObjectHideFlags: 0

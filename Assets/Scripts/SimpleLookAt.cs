@@ -4,12 +4,25 @@ using UnityEngine;
 
 public class SimpleLookAt : MonoBehaviour
 {
+    [SerializeField] bool movement = false;
+    [SerializeField] bool orbit = false;
+    Vector3 velocity;
+    Vector3 acceleration;
+    Vector3 mousePos;
+    Vector3 diference;
+    float radians;
+
     void Update()
     {
-        Vector3 mousePos = GetWorldMousePosition();
-        Vector3 diference = mousePos - transform.position;
-        float radians = Mathf.Atan2(diference.y, diference.x);
+        mousePos = GetWorldMousePosition();
+        diference = mousePos - transform.position;
+        radians = Mathf.Atan2(diference.y, diference.x);
         transform.localRotation = Quaternion.Euler(0f, 0f, radians * Mathf.Rad2Deg);
+        if (movement)
+        {
+            Move(diference);
+        }
+        
     }
 
     private Vector4 GetWorldMousePosition()
@@ -20,5 +33,19 @@ public class SimpleLookAt : MonoBehaviour
         worldPos.z = 0;
 
         return worldPos;
+    }
+
+    void Move(Vector3 direction)
+    {
+        if(orbit)
+        {
+            acceleration = direction;
+            velocity += acceleration * Time.deltaTime;
+        }
+        else
+        {
+            velocity = direction;
+        }
+        transform.position += velocity * Time.deltaTime;
     }
 }
