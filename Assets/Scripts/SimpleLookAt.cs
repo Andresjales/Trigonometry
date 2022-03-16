@@ -16,7 +16,7 @@ public class SimpleLookAt : MonoBehaviour
     {
         mousePos = GetWorldMousePosition();
         diference = mousePos - transform.position;
-        radians = Mathf.Atan2(diference.y, diference.x);
+        radians = Mathf.Atan2(velocity.y, velocity.x);
         transform.localRotation = Quaternion.Euler(0f, 0f, radians * Mathf.Rad2Deg);
         if (movement)
         {
