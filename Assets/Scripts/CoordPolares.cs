@@ -14,8 +14,6 @@ public class CoordPolares : MonoBehaviour
     [SerializeField] float xBorder;
     [SerializeField] float yBorder;
 
-    private float cos, sin;
-
     void Update()
     {
         radialSpeed += radialAcceleration * Time.deltaTime;
