@@ -333,10 +333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   polarCoord: {x: 0, y: 0}
-  radialAcceleration: 0.5
-  angularAcceleration: 1
-  xBorder: 5
-  yBorder: 5
+  radialAcceleration: 0.1
+  angularAcceleration: 0.5
 --- !u!96 &1476949100
 TrailRenderer:
   serializedVersion: 2

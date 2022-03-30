@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class CoordPolares : MonoBehaviour
 {
+    [Header("Polar Coord")]
     [SerializeField] Vector2 polarCoord;
-    [SerializeField] float radialAcceleration;
-    [SerializeField] float angularAcceleration;
-    float radialSpeed;
-    float angularSpeed;
 
+    [Header("Radial Speed")]
+    [SerializeField] float radialAcceleration;
+    [SerializeField] float radialSpeed;
+
+    [Header("Angular Speed")]
+    [SerializeField] float angularAcceleration;
+    [SerializeField] float angularSpeed;
+    
     void Update()
     {
         radialSpeed += radialAcceleration * Time.deltaTime;
@@ -18,21 +23,14 @@ public class CoordPolares : MonoBehaviour
         angularSpeed += angularAcceleration * Time.deltaTime;
         polarCoord.y += angularSpeed * Time.deltaTime;
 
-        if (Mathf.Abs(polarCoord.x) >= 5)
-        {
-            if (Mathf.Abs(radialAcceleration) > 0)
-            {
-                radialAcceleration = -radialAcceleration;
-            }
-            else
-            {
-                radialSpeed = -radialSpeed;
-            }
-        }
-
-        transform.localPosition = PolarToCartesian(polarCoord);
+        transform.position = PolarToCartesian(polarCoord);
 
         DrawPolar(polarCoord);
+
+        if (Mathf.Abs(polarCoord.x) >= 5)
+        {
+            radialSpeed *= -1;
+        }
     }
 
     void DrawPolar(Vector2 polarCord)
